@@ -1,31 +1,31 @@
-@import '../node_modules/bulma/sass/utilities/variables.sass';
-@import '../node_modules/bulma/sass/utilities/functions.sass';
+@use '../node_modules/bulma/sass/utilities/variables.sass';
+@use '../node_modules/bulma/sass/utilities/functions.sass';
 
 $hintPrefix: 'tooltip--';
-$hintFontFamily: $family-sans-serif;
+$hintFontFamily: variables.$family-sans-serif;
 $hintTextShadowDarkenAmount: 0;
-$hintWarningColor: $warning;
-$hintInfoColor: $info;
-$hintSuccessColor: $success;
+$hintWarningColor: variables.$warning;
+$hintInfoColor: variables.$info;
+$hintSuccessColor: variables.$success;
 
-@import '~hint.css/src/hint';
+@use '~hint.css/src/hint';
 
 .tooltip--warning:after {
-  color: $warning-invert;
+  color: variables.$warning-invert;
 }
 
-.#{$hintPrefix}primary {
-  @include hint-type($primary);
+.#{hint.$hintPrefix}primary {
+  @include hint.hint-type(variables.$primary);
 }
 
-.#{$hintPrefix}danger {
-  @include hint-type($danger);
+.#{hint.$hintPrefix}danger {
+  @include hint.hint-type(variables.$danger);
 }
 
-.#{$hintPrefix}rounded:after {
-  border-radius: $radius;
+.#{hint.$hintPrefix}rounded:after {
+  border-radius: variables.$radius;
 }
 
-[class*='#{$hintPrefix}']:after {
+[class*='#{hint.$hintPrefix}']:after {
   box-shadow: 0 2px 3px rgba(17, 17, 17, 0.1), 0 0 0 1px rgba(17, 17, 17, 0.1);
 }
