@@ -20,6 +20,7 @@
   "license": "MIT",
   "dependencies": {
     "classnames": "^2.5.1",
-    "hint.css": "^3.0.0"
+    "hint.css": "^3.0.0",
+    "bulma": "0.2.3"
   }
 }
