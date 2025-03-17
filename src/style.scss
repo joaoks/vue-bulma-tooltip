@@ -1,5 +1,5 @@
-@use '../node_modules/bulma/sass/utilities/variables.sass';
-@use '../node_modules/bulma/sass/utilities/functions.sass';
+@use './node_modules/bulma/sass/utilities/variables.sass';
+@use './node_modules/bulma/sass/utilities/functions.sass';
 
 $hintPrefix: 'tooltip--';
 $hintFontFamily: variables.$family-sans-serif;
@@ -8,7 +8,7 @@ $hintWarningColor: variables.$warning;
 $hintInfoColor: variables.$info;
 $hintSuccessColor: variables.$success;
 
-@use '~hint.css/src/hint';
+@use './node_modules/hint.css/src/hint';
 
 .tooltip--warning:after {
   color: variables.$warning-invert;
