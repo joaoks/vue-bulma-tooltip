@@ -6,7 +6,7 @@ Tooltip component is based on [hint.css](https://github.com/chinchang/hint.css) 
 ## Installation
 
 ```
-$ npm install vue-bulma-tooltip --save
+$ yarn add https://github.com/joaoks/vue-bulma-tooltip
 ```
 
 
